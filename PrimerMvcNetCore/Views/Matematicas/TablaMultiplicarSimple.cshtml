@@ -1,0 +1,34 @@
+﻿@model List<int>
+
+<h1>Tabla Multiplicar Simple</h1>
+
+<form method="post">
+    <label>Numero:</label>
+    <input type="number" name="numero"
+           class="form-control" />
+    <button class="btn btn-info">
+        Generar Tabla
+    </button>
+</form>
+
+@if (Model != null && Model.Count > 0)
+{
+    <h2>Tabla de Multiplicar para el número @Model[0]</h2>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Multiplicador</th>
+                <th>Resultado</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (int i = 1; i <= Model.Count; i++)
+            {
+                <tr>
+                    <td>@Model[0] x @i</td>
+                    <td>@Model[i - 1]</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

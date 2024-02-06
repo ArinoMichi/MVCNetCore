@@ -1,0 +1,18 @@
+﻿<h2>Practica Sumar Dos Numeros</h2>
+<ul>
+    <li>
+        @Html.ActionLink("Suma Get", "SumarNumerosGet", "Matematicas", new{numero1=2,numero2=5})
+    </li>
+    <li>
+        <a asp-controller="Matematicas" asp-action="SumarNumerosPost">Suma Post</a>
+    </li>
+    <li>
+        <a asp-controller="Matematicas" asp-action="ConjeturaCollatz">Conejtura Collatz</a>
+    </li>
+    <li>
+        @Html.ActionLink("Generar Tabla Multiplicar", "TablaMultiplicarSimple", "Matematicas")
+    </li>
+    <li>
+        <a asp-controller="Matematicas" asp-action="TablaMultiplicarModel">Generar tabla con Model</a>
+    </li>
+</ul>

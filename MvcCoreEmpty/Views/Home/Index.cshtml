@@ -1,0 +1,30 @@
+﻿@section styles{
+    <style>
+        button{
+            color:brown;
+        }
+        #mensajevista{
+            color:forestgreen;
+        }
+    </style>
+}
+
+
+
+<h1 style="color:saddlebrown" id="mensajevista">
+    Estoy en casita....
+</h1>
+
+<button id="botonvista" class="btn btn-info">
+    Mensaje en View Index
+</button>
+@section scripts{
+    <script>
+        $(document).ready(function () {
+            $("#botonvista").click(function () {
+                $("#mensajevista").text("Nuevo mensaje en INDEX VIEW!!!!")
+            })
+        })
+    </script>
+}
+

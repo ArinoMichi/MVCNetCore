@@ -1,0 +1,25 @@
+﻿<h1>Menu Informacion</h1>
+<ul>
+    <li>
+        <a asp-controller="Informacion"
+            asp-action="ControladorVista">
+            Controlador ---> Vista
+        </a>
+    </li>
+    <li>
+        <a asp-controller="Informacion"
+        asp-action="VistaControladorPost">
+        Vista ---> Controlador POST
+    </a>
+    </li>
+
+    <li>
+       @Html.ActionLink("Vista ---> Controller GET",
+       "VistaControladorGet", "Informacion",
+       new{ app= "Mvc Net Core", version = 7})
+    </li>
+    <li>
+        @Html.ActionLink("Vista --> Controller GET sin parametros",
+        "VistaControladorGet", "Informacion" )
+    </li>
+</ul>

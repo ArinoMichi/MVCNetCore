@@ -1,0 +1,40 @@
+﻿@*
+    COMENTARIOS EN RAZOR
+*@
+
+@*DECLARACION DE VARIABLES A NUVEL DE PAGINA*@
+@{
+    //VARIABLES LOCALES DE PAGINA
+    //TODO ESTO ES CODIGO C#
+
+    int valor = 0;
+    string texto = "Hoy es lunes";
+    valor += 1;
+    texto = texto.ToUpper();
+}
+
+@*DIBUJAR VARIABLES*@
+<h2 style="color:seagreen"> 
+    Texto: @texto, Valor: @valor
+</h2>
+@*CODIGO LOGICO (CONDICIONES Y BUCLES)*@
+@if (valor >= 0)
+{
+    //CODIGO C#
+    texto = "POSITIVO";
+    <h2 style="color:hotpink">
+        @texto
+    </h2>
+
+}
+else
+{
+    texto = "NEGATIVO";
+    <h2 style="color:rebeccapurple">
+        @texto
+    </h2>
+}
+
+<h1 style="color:blueviolet">
+    Mi primera pagina MVC Net Core!!!
+</h1>
