@@ -27,3 +27,10 @@ E:\WEB_MASTER\MODULO3\MVCNetCore\MvcCoreAdoNet\obj\Debug\net7.0\MvcCoreAdoNet.pd
 E:\WEB_MASTER\MODULO3\MVCNetCore\MvcCoreAdoNet\obj\Debug\net7.0\MvcCoreAdoNet.genruntimeconfig.cache
 E:\WEB_MASTER\MODULO3\MVCNetCore\MvcCoreAdoNet\obj\Debug\net7.0\ref\MvcCoreAdoNet.dll
 E:\WEB_MASTER\MODULO3\MVCNetCore\MvcCoreAdoNet\bin\Debug\net7.0\MvcCoreAdoNet.staticwebassets.runtime.json
+E:\WEB_MASTER\MODULO3\MVCNetCore\MvcCoreAdoNet\bin\Debug\net7.0\System.Data.SqlClient.dll
+E:\WEB_MASTER\MODULO3\MVCNetCore\MvcCoreAdoNet\bin\Debug\net7.0\runtimes\win-arm64\native\sni.dll
+E:\WEB_MASTER\MODULO3\MVCNetCore\MvcCoreAdoNet\bin\Debug\net7.0\runtimes\win-x64\native\sni.dll
+E:\WEB_MASTER\MODULO3\MVCNetCore\MvcCoreAdoNet\bin\Debug\net7.0\runtimes\win-x86\native\sni.dll
+E:\WEB_MASTER\MODULO3\MVCNetCore\MvcCoreAdoNet\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\WEB_MASTER\MODULO3\MVCNetCore\MvcCoreAdoNet\bin\Debug\net7.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\WEB_MASTER\MODULO3\MVCNetCore\MvcCoreAdoNet\obj\Debug\net7.0\MvcCoreAdoNet.csproj.CopyComplete
