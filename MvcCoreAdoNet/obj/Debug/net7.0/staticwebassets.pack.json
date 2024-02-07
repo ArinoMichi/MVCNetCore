@@ -1,0 +1,213 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreAdoNet\\wwwroot\\css\\HomeStyle.css",
+      "PackagePath": "staticwebassets\\css\\HomeStyle.css"
+    },
+    {
+      "Id": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreAdoNet\\wwwroot\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreAdoNet\\wwwroot\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreAdoNet\\wwwroot\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreAdoNet\\wwwroot\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreAdoNet\\wwwroot\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreAdoNet\\wwwroot\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreAdoNet\\wwwroot\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreAdoNet\\wwwroot\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreAdoNet\\wwwroot\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreAdoNet\\wwwroot\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreAdoNet\\wwwroot\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreAdoNet\\wwwroot\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreAdoNet\\wwwroot\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreAdoNet\\wwwroot\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreAdoNet\\wwwroot\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreAdoNet\\wwwroot\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreAdoNet\\wwwroot\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreAdoNet\\wwwroot\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreAdoNet\\wwwroot\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreAdoNet\\wwwroot\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreAdoNet\\wwwroot\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreAdoNet\\wwwroot\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreAdoNet\\wwwroot\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreAdoNet\\wwwroot\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreAdoNet\\wwwroot\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.css"
+    },
+    {
+      "Id": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreAdoNet\\wwwroot\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreAdoNet\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreAdoNet\\wwwroot\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreAdoNet\\wwwroot\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreAdoNet\\wwwroot\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreAdoNet\\wwwroot\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreAdoNet\\wwwroot\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreAdoNet\\wwwroot\\css\\cover.css",
+      "PackagePath": "staticwebassets\\css\\cover.css"
+    },
+    {
+      "Id": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreAdoNet\\wwwroot\\css\\css3.css",
+      "PackagePath": "staticwebassets\\css\\css3.css"
+    },
+    {
+      "Id": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreAdoNet\\wwwroot\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreAdoNet\\wwwroot\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreAdoNet\\wwwroot\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreAdoNet\\wwwroot\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreAdoNet\\wwwroot\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreAdoNet\\wwwroot\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreAdoNet\\wwwroot\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreAdoNet\\wwwroot\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreAdoNet\\wwwroot\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.js"
+    },
+    {
+      "Id": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreAdoNet\\wwwroot\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreAdoNet\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreAdoNet\\wwwroot\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreAdoNet\\wwwroot\\js\\jquery-3.7.1.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-3.7.1.min.js"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.MvcCoreAdoNet.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.MvcCoreAdoNet.props",
+      "PackagePath": "build\\MvcCoreAdoNet.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.MvcCoreAdoNet.props",
+      "PackagePath": "buildMultiTargeting\\MvcCoreAdoNet.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.MvcCoreAdoNet.props",
+      "PackagePath": "buildTransitive\\MvcCoreAdoNet.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,15 @@
+﻿@model List<MvcCoreAdoNet.Models.Mascota>
+
+<div class="container">
+    @foreach (var mascota in Model)
+    {
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">@mascota.Nombre</h5>
+                <p class="card-text">Edad: @mascota.Edad años</p>
+                <p class="card-text">Raza: @mascota.Raza</p>
+            </div>
+        </div>
+    }
+</div>
+
