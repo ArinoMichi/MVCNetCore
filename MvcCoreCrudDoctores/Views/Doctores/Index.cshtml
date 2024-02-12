@@ -1,0 +1,38 @@
+﻿@model List<Doctor>
+
+<div class="d-flex align-items-center justify-content-between">
+    <h1>CRUD Doctores ADO NET</h1>
+    <a href="@Url.Action("Create", "Doctores")" class="btn btn-primary rounded-circle">
+        <i class="fas fa-plus"></i>
+    </a>
+</div>
+
+
+
+
+<div class="table-responsive">
+    <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th>NOMBRE</th>
+                <th>ESPECIALIDAD</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Doctor doc in Model)
+            {
+                <tr>
+                    <td>@doc.Apellido</td>
+                    <td>@doc.Especialidad</td>
+                    <td class="text-center">
+                        <div class="btn-group w-100" role="group">
+                            <a href="@Url.Action("Details", "Doctores", new { id = doc.IdDoctor })" class="btn btn-info btn-sm m-1">Detalles</a>
+                            <a href="@Url.Action("Edit", "Doctores", new { id = doc.IdDoctor })" class="btn btn-warning btn-sm m-1">Editar</a>
+                            <a href="@Url.Action("Delete", "Doctores", new { id = doc.IdDoctor })" class="btn btn-danger btn-sm m-1">Borrar</a>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

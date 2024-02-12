@@ -1,0 +1,19 @@
+﻿@model Doctor
+
+<div class="container mt-5">
+    <div class="card mx-auto" style="max-width: 500px;">
+        <div class="card-header bg-info text-white text-center">
+            <h2 class="mb-0">Detalles del Doctor Numero: @Model.IdDoctor</h2>
+        </div>
+        <div class="card-body">
+            <h4 class="card-title">Id Hospital: @Model.IdHospital</h4>
+            <h4 class="card-title">Id Doctor: @Model.IdDoctor</h4>
+            <h4 class="card-title">Apellido: @Model.Apellido</h4>
+            <h4 class="card-title">Especialidad: @Model.Especialidad</h4>
+            <h4 class="card-title">Salario: @Model.Salario</h4>
+        </div>
+        <div class="card-footer text-center">
+            <a href="@Url.Action("Index")" class="btn btn-secondary">Volver a la Lista</a>
+        </div>
+    </div>
+</div>
