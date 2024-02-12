@@ -18,5 +18,11 @@ namespace MvcNetCoreLinqToSql.Controllers
             List<Empleado> empleados = this.repo.GetEmpleados();
             return View(empleados);
         }
+
+        public IActionResult Details(int id) 
+        {
+            Empleado emp = this.repo.FindEmpleado(id);
+            return View(emp);
+        }
     }
 }
