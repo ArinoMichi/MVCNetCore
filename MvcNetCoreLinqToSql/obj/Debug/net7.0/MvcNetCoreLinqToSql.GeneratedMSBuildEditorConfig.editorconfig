@@ -16,6 +16,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = E:\WEB_MASTER\MODULO3\MVCNetCore\MvcNetCoreLinqToSql
 build_property._RazorSourceGeneratorDebug = 
 
+[E:/WEB_MASTER/MODULO3/MVCNetCore/MvcNetCoreLinqToSql/Views/Empleados/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9zXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/WEB_MASTER/MODULO3/MVCNetCore/MvcNetCoreLinqToSql/Views/Empleados/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/WEB_MASTER/MODULO3/MVCNetCore/MvcNetCoreLinqToSql/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
