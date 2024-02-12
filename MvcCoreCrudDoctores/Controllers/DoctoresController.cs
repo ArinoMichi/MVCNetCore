@@ -51,5 +51,11 @@ namespace MvcCoreCrudDoctores.Controllers
             return RedirectToAction("Index");
         }
 
+        public async Task<IActionResult> Delete(int id)
+        {
+            await repo.DeleteDoctorAsync(id);
+            return RedirectToAction("Index");
+        }
+
     }
 }

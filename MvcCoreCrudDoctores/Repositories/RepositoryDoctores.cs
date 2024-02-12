@@ -122,7 +122,14 @@ namespace MvcCoreCrudDoctores.Repositories
         public async Task DeleteDoctorAsync(int id)
         {
             string sql = "DELETE FROM DOCTOR WHERE DOCTOR_NO = @id";
+            this.com.Parameters.AddWithValue("@id", id);
 
+            this.com.CommandType = System.Data.CommandType.Text;
+            this.com.CommandText = sql;
+            await this.cn.OpenAsync();
+            int af = await this.com.ExecuteNonQueryAsync();
+            await this.cn.CloseAsync();
+            this.com.Parameters.Clear();
         }
 
 

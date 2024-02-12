@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MvcCoreCrudDoctores")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+af11ec7f25671ef9e5ea93e796d477bf6da93b1a")]
 [assembly: System.Reflection.AssemblyProductAttribute("MvcCoreCrudDoctores")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MvcCoreCrudDoctores")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
