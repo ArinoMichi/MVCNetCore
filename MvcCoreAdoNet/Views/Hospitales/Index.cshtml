@@ -1,13 +1,15 @@
 ﻿@model List<Hospital>
 
 <h1>Lista de hospitales</h1>
+
 <table class="table table-bordered">
     <thead>
         <tr>
             <th>Nombre</th>
-            <th>Direcicón</th>
+            <th>Dirección</th>
             <th>Teléfono</th>
             <th>Camas</th>
+            <th>Acciones</th>
         </tr>
     </thead>
     <tbody>
@@ -18,7 +20,14 @@
                 <td>@hospital.Direccion</td>
                 <td>@hospital.Telefono</td>
                 <td>@hospital.Camas</td>
+                <td>
+                    @Html.ActionLink("Detalles", "Details", "Hospitales", new { idhospital = hospital.IdHospital }) |
+                    @Html.ActionLink("Actualizar", "Edit", "Hospitales", new { idhospital = hospital.IdHospital }) |
+                    @Html.ActionLink("Eliminar", "Index", "Hospitales", new { eliminar = hospital.IdHospital })
+                </td>
             </tr>
         }
     </tbody>
 </table>
+
+<h2><a asp-action="Create" asp-controller="Hospitales">Insertar Hospital</a></h2>

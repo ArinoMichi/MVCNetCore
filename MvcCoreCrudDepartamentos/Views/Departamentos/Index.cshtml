@@ -1,0 +1,31 @@
+﻿@model List<Departamento>
+
+<h1 class="my-4">CRUD Departamentos Ado Net</h1>
+
+<div class="table-responsive">
+    <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th>Nombre</th>
+                <th>Localidad</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Departamento dept in Model)
+            {
+                <tr>
+                    <td>@dept.Nombre</td>
+                    <td>@dept.Localidad</td>
+                    <td class="text-center">
+                        <div class="btn-group w-100" role="group">
+                            <a href="@Url.Action("Details", "Departamentos", new { id = dept.IdDepartamento })" class="btn btn-info btn-sm m-1">Detalles</a>
+                            <a href="@Url.Action("Edit", "Departamentos", new { id = dept.IdDepartamento })" class="btn btn-warning btn-sm m-1">Editar</a>
+                            <a href="@Url.Action("Delete", "Departamentos", new { iddepartamento = dept.IdDepartamento })" class="btn btn-danger btn-sm m-1">Borrar</a>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

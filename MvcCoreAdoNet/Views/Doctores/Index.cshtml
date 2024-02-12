@@ -1,0 +1,39 @@
+﻿@model List<Doctor>
+
+<h1>Doctores</h1>
+
+
+<form class="d-flex" role="search" method="post" >
+   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="especialidad">
+   <button class="btn btn-outline-success" type="submit">Buscar</button>
+</form>
+<br />
+ 
+
+<p>
+    <a asp-action="Index" asp-controller="Doctores">Resetear</a>
+</p>
+
+<table class="table table-primary">
+    <thead>
+        <tr>
+            <th>ID HOSPITAL</th>
+            <th>ID DOCTOR</th>
+            <th>APELLIDO</th>
+            <th>ESPECIALIDAD</th>
+            <th>SALARIO</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var doctor in Model)
+        {
+            <tr>
+                <td>@doctor.IdHospital</td>
+                <td>@doctor.IdDoctor</td>
+                <td>@doctor.Apellido</td>
+                <td>@doctor.Especialidad</td>
+                <td>@doctor.Salario</td>
+            </tr>
+        }
+    </tbody>
+</table>
