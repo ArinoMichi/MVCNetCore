@@ -1,1 +1,30 @@
-﻿<h1>Empleados</h1>
+﻿@model List<Empleado>
+
+<h1>Empleados</h1>
+<a asp-controller="Empleados" asp-action="BuscadorEmpleados" class="btn btn-dark">Buscar</a>
+<br />
+<a asp-controller="Empleados" asp-action="DatosEmpleados" class="btn btn-outline-success">Ver Empleados Oficios</a>
+<br />
+<a asp-controller="Empleados" asp-action="BuscadorEmpleadosDepartamento" class="btn btn-outline-dark">Ver Empleados Departamento</a>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>APELLIDO</th>
+            <th>OFICIO</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var emp in Model)
+        {
+            <tr>
+                <td>@emp.Apellido</td>
+                <td>@emp.Oficio</td>
+                <td>
+                    <a asp-controller="Empleados" asp-action="Details" asp-route-id="@emp.IdEmpleado" class="btn btn-primary">Detalles</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

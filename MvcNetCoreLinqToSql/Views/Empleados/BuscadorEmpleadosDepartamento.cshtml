@@ -1,0 +1,60 @@
+﻿@model ResumenEmpleados
+
+@{
+    List<Departamento> departamentos = ViewData["DEPARTAMENTOS"] as List<Departamento>;
+}
+
+
+<div class="container mt-5">
+    <h1 class="mb-4">Lambda Empleados Departamentos</h1>
+
+    <form method="post" class="mb-4">
+        <div class="form-group">
+            <select name="idDepartamento" class="form-control">
+                @foreach (Departamento dept in departamentos)
+                {
+                    <option value="@dept.IdDepartamento">@dept.Nombre</option>
+                }
+            </select>
+        </div>
+        <button type="submit" class="btn btn-outline-success">
+            Mostrar Resumen
+        </button>
+    </form>
+    <br />
+    <h1>@ViewData["MENSAJE"]</h1>
+    @if (Model != null)
+    {
+        <ul class="list-group">
+            <li class="list-group-item">
+                Personas: @Model.Personas
+            </li>
+            <li class="list-group-item">
+                Maximo Salario: @Model.MaximoSalario
+            </li>
+            <li class="list-group-item">
+                Media salarial: @Model.MediaSalarial
+            </li>
+        </ul>
+
+        <table class="table table-bordered mt-4">
+            <thead>
+                <tr>
+                    <th>Apellido</th>
+                    <th>Oficio</th>
+                    <th>Salario</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Empleado emp in Model.Empleados)
+                {
+                    <tr>
+                        <td>@emp.Apellido</td>
+                        <td>@emp.Oficio</td>
+                        <td>@emp.Salario</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+</div>

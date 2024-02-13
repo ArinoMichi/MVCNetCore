@@ -1,0 +1,24 @@
+﻿@model Enfermo
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    Detalles del Enfermo
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">@Model.Apellido</h5>
+                    <p class="card-text">
+                        <strong>Inscripción:</strong> @Model.Inscipcion <br />
+                        <strong>Dirección:</strong> @Model.Direccion <br />
+                        <strong>Fecha de Nacimiento:</strong> @Model.FechaNacimiento.ToShortDateString() <br />
+                        <strong>Sexo:</strong> @Model.Sexo <br />
+                        <strong>NSS:</strong> @Model.NSS
+                    </p>
+                    <a href="@Url.Action("Index", "Enfermos")" class="btn btn-primary">Volver</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

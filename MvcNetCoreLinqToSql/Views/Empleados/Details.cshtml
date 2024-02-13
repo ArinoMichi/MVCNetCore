@@ -1,1 +1,23 @@
-﻿
+﻿@model Empleado
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    Detalles del Empleado
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">@Model.Apellido</h5>
+                    <p class="card-text">
+                        <strong>ID Empleado:</strong> @Model.IdEmpleado <br />
+                        <strong>Oficio:</strong> @Model.Oficio <br />
+                        <strong>Salario:</strong> @Model.Salario <br />
+                        <strong>ID Departamento:</strong> @Model.IdDepartamento
+                    </p>
+                    <a href="@Url.Action("Index", "Empleados")" class="btn btn-primary">Volver</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
