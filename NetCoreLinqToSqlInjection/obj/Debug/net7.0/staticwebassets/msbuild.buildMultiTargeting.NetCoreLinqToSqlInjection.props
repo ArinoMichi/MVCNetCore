@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\NetCoreLinqToSqlInjection.props" />
+</Project>
