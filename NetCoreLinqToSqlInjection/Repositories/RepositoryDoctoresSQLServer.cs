@@ -1,6 +1,31 @@
-﻿using NetCoreLinqToSqlInjection.Models;
+﻿using Microsoft.AspNetCore.Http.HttpResults;
+using NetCoreLinqToSqlInjection.Models;
 using System.Data;
 using System.Data.SqlClient;
+using System.Numerics;
+
+#region PROCEDURES
+
+//PROCEDIMIENTO PARA ELIMINAR DOCTOR
+    //create procedure SP_DELETE_DOCTOR
+    //(@iddoctor int)
+    //as
+    //    delete from DOCTOR where DOCTOR_NO = @iddoctor
+    //go
+
+//PROCEDIMIENTO PARA ACTUALIZAR DOCTOR
+
+    //create procedure SP_UPDATE_DOCTOR
+    //(@iddoctor int, @idhos int, @apellido varchar(50),@especialidad varchar(50), @salario int)
+    //as
+    //    update DOCTOR
+    //    where DOCTOR_NO=@iddoctor
+    //go
+
+#endregion
+
+
+
 
 namespace NetCoreLinqToSqlInjection.Repositories
 {
@@ -22,6 +47,37 @@ namespace NetCoreLinqToSqlInjection.Repositories
             adapter.Fill(tablaDoctores);
         }
 
+        public void DeleteDoctor(int id)
+        {
+            this.com.Parameters.AddWithValue("@iddoctor", id);
+            this.com.CommandType = CommandType.StoredProcedure;
+            this.com.CommandText = "SP_DELETE_DOCTOR";
+
+            this.cn.Open();
+            int af = this.com.ExecuteNonQuery();
+            this.cn.Close();
+            this.com.Parameters.Clear();
+
+        }
+        public void UpdateDoctor(int idDoc, int idHos, string apellido, string especialidad, int salario)
+        {
+            this.com.Parameters.AddWithValue("@iddoctor", idDoc);
+            this.com.Parameters.AddWithValue("@idhos", idHos);
+            this.com.Parameters.AddWithValue("@apellido", apellido);
+            this.com.Parameters.AddWithValue("@especialidad", especialidad);
+            this.com.Parameters.AddWithValue("@salario", salario);
+
+            this.com.CommandType = CommandType.StoredProcedure;
+            this.com.CommandText = "SP_UPDATE_DOCTOR";
+
+            this.cn.Open();
+            int af = this.com.ExecuteNonQuery();
+            this.cn.Close();
+            this.com.Parameters.Clear();
+
+        }
+
+
         public List<Doctor> GetDoctores()
         {
             var consulta = from datos in this.tablaDoctores.AsEnumerable()
@@ -41,10 +97,12 @@ namespace NetCoreLinqToSqlInjection.Repositories
             }
             return doctores;
         }
+
+
         public List<Doctor> GetDoctoresEspecialidad(string especialidad)
         {
             var consulta = from datos in this.tablaDoctores.AsEnumerable()
-                           where datos.Field<string>("ESPECIALIDAD") == especialidad
+                           where datos.Field<string>("ESPECIALIDAD").ToUpper() == especialidad.ToUpper()
                            select datos;
             if (consulta.Count() == 0)
             {
@@ -87,6 +145,30 @@ namespace NetCoreLinqToSqlInjection.Repositories
             this.com.Parameters.Clear();
 
         }
-        
+
+        public Doctor GetDoctorById(int id)
+        {
+            var consulta = from datos in this.tablaDoctores.AsEnumerable()
+                           where datos.Field<int>("DOCTOR_NO") == id
+                           select datos;
+
+            if (consulta.Any())
+            {
+                var row = consulta.First();
+                Doctor doc = new Doctor
+                {
+                    IdDoctor = row.Field<int>("DOCTOR_NO"),
+                    Apellido = row.Field<string>("APELLIDO"),
+                    Especialidad = row.Field<string>("ESPECIALIDAD"),
+                    Salario = row.Field<int>("SALARIO"),
+                    IdHospital = row.Field<int>("HOSPITAL_COD")
+                };
+                return doc;
+            }
+            else
+            {
+                return null;
+            }
+        }
     }
 }

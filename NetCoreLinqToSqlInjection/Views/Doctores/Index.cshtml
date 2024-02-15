@@ -21,6 +21,10 @@
                 <td>@doc.Especialidad</td>
                 <td>@doc.Salario</td>
                 <td>@doc.IdHospital</td>
+                <td>
+                    <a class="btn btn-danger" asp-controller="Doctores" asp-action="Delete" asp-route-iddoctor="@doc.IdDoctor">Borrar</a>
+                    <a class="btn btn-info" asp-controller="Doctores" asp-action="Edit" asp-route-iddoctor="@doc.IdDoctor">Editar</a>
+                </td>
             </tr>
         }
     </tbody>

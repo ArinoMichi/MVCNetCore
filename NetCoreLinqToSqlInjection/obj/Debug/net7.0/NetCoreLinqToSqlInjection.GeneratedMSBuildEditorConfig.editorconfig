@@ -24,6 +24,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/WEB_MASTER/MODULO3/MVCNetCore/NetCoreLinqToSqlInjection/Views/Doctores/DoctoresEspecialidad.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yZXNcRG9jdG9yZXNFc3BlY2lhbGlkYWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/WEB_MASTER/MODULO3/MVCNetCore/NetCoreLinqToSqlInjection/Views/Doctores/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/WEB_MASTER/MODULO3/MVCNetCore/NetCoreLinqToSqlInjection/Views/Doctores/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

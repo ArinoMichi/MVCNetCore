@@ -1,0 +1,23 @@
+﻿@model List<Personaje>
+
+<h1>Personajes</h1>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>NOMBRE</th>
+            <th>IMAGEN</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(Personaje per in Model)
+        {
+            <tr>
+                <th>@per.Id</th>
+                <th>@per.Nombre</th>
+                <th><img src="@per.Imagen" style="width:100px; height:auto"/></th>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -22,6 +22,22 @@ namespace NetCoreLinqToSqlInjection.Repositories
             ad.Fill(this.tablaDoctores);
         }
 
+        public void DeleteDoctor(int id)
+        {
+            OracleParameter pamIdDoctor = new OracleParameter(":p_iddoctor", id);
+            this.com.Parameters.Add(pamIdDoctor);
+            this.com.CommandType = CommandType.StoredProcedure;
+            this.com.CommandText = "SP_DELETE_DOCTOR";
+            this.cn.Open();
+            int af = this.com.ExecuteNonQuery();
+            this.cn.Close();
+            this.com.Parameters.Clear();
+        }
+        public void UpdateDoctor(int idDoc, int idHos, string apellido, string especialidad, int salario)
+        {
+            throw new NotImplementedException();
+        }
+
         public List<Doctor> GetDoctores()
         {
             //LA VENTAJA DE LINQ ES QUE SE ABSTRAE DEL ORIGEN DE DATOS
@@ -41,6 +57,35 @@ namespace NetCoreLinqToSqlInjection.Repositories
                 doctores.Add(doc);
             }
             return doctores;
+        }
+
+        public List<Doctor> GetDoctoresEspecialidad(string especialidad)
+        {
+            var consulta = from datos in this.tablaDoctores.AsEnumerable()
+                           where datos.Field<string>("ESPECIALIDAD").ToUpper() == especialidad.ToUpper()
+                           select datos;
+
+            if (consulta.Count() == 0)
+            {
+                return null;
+            }
+            else
+            {
+                List<Doctor> doctores = new List<Doctor>();
+                foreach (var row in consulta)
+                {
+                    Doctor doc = new Doctor
+                    {
+                        IdDoctor = row.Field<int>("DOCTOR_NO"),
+                        Apellido = row.Field<string>("APELLIDO"),
+                        Especialidad = row.Field<string>("ESPECIALIDAD"),
+                        Salario = row.Field<int>("SALARIO"),
+                        IdHospital = row.Field<int>("HOSPITAL_COD")
+                    };
+                    doctores.Add(doc);
+                }
+                return doctores;
+            }
         }
 
         public void InsertDoctor(int id, string apellido, string especialidad, int salario, int idHospital)
@@ -65,6 +110,31 @@ namespace NetCoreLinqToSqlInjection.Repositories
             int af = this.com.ExecuteNonQuery();
             this.cn.Close();
             this.com.Parameters.Clear();
+        }
+
+        public Doctor GetDoctorById(int id)
+        {
+            var consulta = from datos in this.tablaDoctores.AsEnumerable()
+                           where datos.Field<int>("DOCTOR_NO") == id
+                           select datos;
+
+            if (consulta.Any())
+            {
+                var row = consulta.First();
+                Doctor doc = new Doctor
+                {
+                    IdDoctor = row.Field<int>("DOCTOR_NO"),
+                    Apellido = row.Field<string>("APELLIDO"),
+                    Especialidad = row.Field<string>("ESPECIALIDAD"),
+                    Salario = row.Field<int>("SALARIO"),
+                    IdHospital = row.Field<int>("HOSPITAL_COD")
+                };
+                return doc;
+            }
+            else
+            {
+                return null;
+            }
         }
     }
 }

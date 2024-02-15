@@ -13,8 +13,8 @@ builder.Services.AddControllersWithViews();
 //builder.Services.AddSingleton<ICoche, Deportivo>();
 
 
-//builder.Services.AddTransient<IRepositoryDoctores, RepositoryDoctoresSQLServer>();
-builder.Services.AddTransient<IRepositoryDoctores,RepositoryDoctoresOracle>();
+builder.Services.AddTransient<IRepositoryDoctores, RepositoryDoctoresSQLServer>();
+//builder.Services.AddTransient<IRepositoryDoctores,RepositoryDoctoresOracle>();
 
 Coche car = new Coche
 {
