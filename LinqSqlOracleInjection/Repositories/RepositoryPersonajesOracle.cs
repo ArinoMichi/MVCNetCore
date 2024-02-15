@@ -23,6 +23,15 @@ namespace LinqSqlOracleInjection.Repositories
             adapter.Fill(this.tablaDoctores);
         }
 
+        public void DeletePersonaje(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Personaje FindPersonajeById(int id)
+        {
+            throw new NotImplementedException();
+        }
 
         public List<Personaje> GetPersonajes()
         {
@@ -55,6 +64,11 @@ namespace LinqSqlOracleInjection.Repositories
             int af = this.com.ExecuteNonQuery();
             this.cn.Close();
             this.com.Parameters.Clear();
+        }
+
+        public void UpdatePersonaje(Personaje personaje)
+        {
+            throw new NotImplementedException();
         }
     }
 }

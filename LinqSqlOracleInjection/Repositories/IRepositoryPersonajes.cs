@@ -10,5 +10,8 @@ namespace LinqSqlOracleInjection.Repositories
 
         Personaje FindPersonajeById(int id);
 
+        void DeletePersonaje(int id);
+        void UpdatePersonaje(Personaje personaje);
+        
     }
 }
