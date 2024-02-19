@@ -1,0 +1,17 @@
+﻿@model Departamento
+
+<div class="card">
+    <div class="card-header">
+        Detalles del Departamento
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">@Model.Nombre</h5>
+        <p class="card-text">
+            <strong>Id Departamento:</strong> @Model.IdDept <br />
+            <strong>Localidad:</strong> @Model.Localidad
+        </p>
+    </div>
+    <div class="card-footer">
+        <a href="@Url.Action("Index", "Departamentos")" class="btn btn-primary">Volver a la Lista</a>
+    </div>
+</div>

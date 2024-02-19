@@ -1,0 +1,19 @@
+﻿<div class="container">
+    <h2>Nuevo Departamento</h2>
+    <form method="post">
+        <div class="form-group">
+            <label>ID:</label>
+            <input name="IdDept" class="form-control" required />
+        </div>
+        <div class="form-group">
+            <label>Nombre:</label>
+            <input name="Nombre" class="form-control" required />
+        </div>
+        <div class="form-group">
+            <label>Localidad:</label>
+            <input name="Localidad" class="form-control" required />
+        </div>
+        <button type="submit" class="btn btn-primary">Guardar</button>
+        <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+    </form>
+</div>

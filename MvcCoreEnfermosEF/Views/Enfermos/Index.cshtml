@@ -1,0 +1,29 @@
+﻿@model List<Enfermo>
+
+<h1 style="color:darkmagenta">Enfermos EF</h1>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Inscripcion</th>
+            <th>Apellido</th>
+            <th>Direccion</th>
+            <th>Fecha_Nac</th>
+            <th>Genero</th>
+            <th>NSS</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Enfermo e in Model)
+        {
+            <tr>
+                <td>@e.Inscripcion</td>
+                <td>@e.Apellido</td>
+                <td>@e.Direccion</td>
+                <td>@e.FechaNacimiento</td>
+                <td>@e.Genero</td>
+                <td>@e.NSS</td>
+            </tr>
+        }
+    </tbody>
+</table>
