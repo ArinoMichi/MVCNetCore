@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = E:\WEB_MASTER\MODULO3\MVCNetCore\MvcNetCoreEF
 build_property._RazorSourceGeneratorDebug = 
 
+[E:/WEB_MASTER/MODULO3/MVCNetCore/MvcNetCoreEF/Views/Empleados/IncrementoSalarial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9zXEluY3JlbWVudG9TYWxhcmlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/WEB_MASTER/MODULO3/MVCNetCore/MvcNetCoreEF/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

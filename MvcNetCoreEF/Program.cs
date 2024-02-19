@@ -13,6 +13,7 @@ string connectionString = builder.Configuration.GetConnectionString("SqlHospital
 
 //RESOLVEMOS EL REPOSITORY CON TRANSIENT
 builder.Services.AddTransient<RepositoryHospital>();
+builder.Services.AddTransient<RepositoryEmpleados>();
 
 //PARA INYECTAR UN CONTEXT SE UTILIZA EL SERVICE AddDbContext
 //DONDE DEBEMOS INDICAR LA CADENA DE CONEXION EN SUS OPTIONS
