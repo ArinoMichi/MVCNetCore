@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LinqSqlOracleInjection")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bfac395141a20c211bc6459f95303607675151b4")]
 [assembly: System.Reflection.AssemblyProductAttribute("LinqSqlOracleInjection")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LinqSqlOracleInjection")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

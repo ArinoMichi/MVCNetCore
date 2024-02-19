@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\LinqSqlOracleInjection\\LinqSqlOracleInjection.csproj": {}
+    "F:\\WEB_MASTER\\MODULO3\\MVCNetCore\\LinqSqlOracleInjection\\LinqSqlOracleInjection.csproj": {}
   },
   "projects": {
-    "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\LinqSqlOracleInjection\\LinqSqlOracleInjection.csproj": {
+    "F:\\WEB_MASTER\\MODULO3\\MVCNetCore\\LinqSqlOracleInjection\\LinqSqlOracleInjection.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\LinqSqlOracleInjection\\LinqSqlOracleInjection.csproj",
+        "projectUniqueName": "F:\\WEB_MASTER\\MODULO3\\MVCNetCore\\LinqSqlOracleInjection\\LinqSqlOracleInjection.csproj",
         "projectName": "LinqSqlOracleInjection",
-        "projectPath": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\LinqSqlOracleInjection\\LinqSqlOracleInjection.csproj",
-        "packagesPath": "C:\\Users\\Alumnos MCSD Mañana\\.nuget\\packages\\",
-        "outputPath": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\LinqSqlOracleInjection\\obj\\",
+        "projectPath": "F:\\WEB_MASTER\\MODULO3\\MVCNetCore\\LinqSqlOracleInjection\\LinqSqlOracleInjection.csproj",
+        "packagesPath": "C:\\Users\\smoll\\.nuget\\packages\\",
+        "outputPath": "F:\\WEB_MASTER\\MODULO3\\MVCNetCore\\LinqSqlOracleInjection\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Alumnos MCSD Mañana\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\smoll\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -69,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
