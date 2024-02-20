@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = E:\WEB_MASTER\MODULO3\MVCNetCore\MvcCoreProceduresEF
 build_property._RazorSourceGeneratorDebug = 
 
+[E:/WEB_MASTER/MODULO3/MVCNetCore/MvcCoreProceduresEF/Views/Doctores/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/WEB_MASTER/MODULO3/MVCNetCore/MvcCoreProceduresEF/Views/Enfermos/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5mZXJtb3NcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
