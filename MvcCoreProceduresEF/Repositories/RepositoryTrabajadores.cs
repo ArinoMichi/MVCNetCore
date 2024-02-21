@@ -1,8 +1,36 @@
-﻿using Microsoft.Data.SqlClient;
+﻿using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using MvcCoreProceduresEF.Data;
 using MvcCoreProceduresEF.Models;
+#region SQL PROCEDURES Y VISTAS
 
+    //CREATE VIEW V_TRABAJADORES
+    //AS
+    //	SELECT ISNULL(EMP_NO,0) AS IDTRABAJADOR,
+    //    APELLIDO, OFICIO, SALARIO FROM EMP
+    //	UNION
+    //	SELECT DOCTOR_NO, APELLIDO, ESPECIALIDAD,
+    //    SALARIO FROM DOCTOR
+    //	UNION 
+    //	SELECT EMPLEADO_NO, APELLIDO, FUNCION,
+    //    SALARIO FROM PLANTILLA
+    //GO
+
+
+    //ALTER PROCEDURE SP_TRABAJADORES_OFICIO
+    //(@OFICIO NVARCHAR(50), @PERSONAS INT OUT, @MEDIA INT OUT, @SUMA INT OUT)
+    //AS
+    //	SELECT * FROM V_TRABAJADORES
+    //	WHERE OFICIO = @OFICIO
+    //	SELECT @PERSONAS = COUNT(IDTRABAJADOR),
+    //	@MEDIA = AVG(SALARIO), @SUMA = SUM(SALARIO)
+
+    //    FROM V_TRABAJADORES
+    //	WHERE OFICIO =@OFICIO
+    //GO
+
+#endregion
 namespace MvcCoreProceduresEF.Repositories
 {
     public class RepositoryTrabajadores
