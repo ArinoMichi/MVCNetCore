@@ -247,3 +247,13 @@ E:\WEB_MASTER\MODULO3\MVCNetCore\MvcCoreEFMultiplesBBDD\obj\Debug\net7.0\refint\
 E:\WEB_MASTER\MODULO3\MVCNetCore\MvcCoreEFMultiplesBBDD\obj\Debug\net7.0\MvcCoreEFMultiplesBBDD.pdb
 E:\WEB_MASTER\MODULO3\MVCNetCore\MvcCoreEFMultiplesBBDD\obj\Debug\net7.0\MvcCoreEFMultiplesBBDD.genruntimeconfig.cache
 E:\WEB_MASTER\MODULO3\MVCNetCore\MvcCoreEFMultiplesBBDD\obj\Debug\net7.0\ref\MvcCoreEFMultiplesBBDD.dll
+E:\WEB_MASTER\MODULO3\MVCNetCore\MvcCoreEFMultiplesBBDD\bin\Debug\net7.0\Oracle.EntityFrameworkCore.dll
+E:\WEB_MASTER\MODULO3\MVCNetCore\MvcCoreEFMultiplesBBDD\bin\Debug\net7.0\Oracle.ManagedDataAccess.dll
+E:\WEB_MASTER\MODULO3\MVCNetCore\MvcCoreEFMultiplesBBDD\bin\Debug\net7.0\System.Diagnostics.PerformanceCounter.dll
+E:\WEB_MASTER\MODULO3\MVCNetCore\MvcCoreEFMultiplesBBDD\bin\Debug\net7.0\System.DirectoryServices.dll
+E:\WEB_MASTER\MODULO3\MVCNetCore\MvcCoreEFMultiplesBBDD\bin\Debug\net7.0\System.DirectoryServices.Protocols.dll
+E:\WEB_MASTER\MODULO3\MVCNetCore\MvcCoreEFMultiplesBBDD\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Diagnostics.PerformanceCounter.dll
+E:\WEB_MASTER\MODULO3\MVCNetCore\MvcCoreEFMultiplesBBDD\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.DirectoryServices.dll
+E:\WEB_MASTER\MODULO3\MVCNetCore\MvcCoreEFMultiplesBBDD\bin\Debug\net7.0\runtimes\linux\lib\net6.0\System.DirectoryServices.Protocols.dll
+E:\WEB_MASTER\MODULO3\MVCNetCore\MvcCoreEFMultiplesBBDD\bin\Debug\net7.0\runtimes\osx\lib\net6.0\System.DirectoryServices.Protocols.dll
+E:\WEB_MASTER\MODULO3\MVCNetCore\MvcCoreEFMultiplesBBDD\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.DirectoryServices.Protocols.dll
