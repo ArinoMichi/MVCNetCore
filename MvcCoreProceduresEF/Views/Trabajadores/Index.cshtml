@@ -1,0 +1,47 @@
+﻿@model IEnumerable<MvcCoreProceduresEF.Models.Trabajador>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>View Trabajadores</h1>
+
+<p>
+    <a asp-action="TrabajadoresOficio" asp-controller="Trabajadores">Trabajadores Oficio</a>
+</p>
+<table class="table table-warning">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.IdTrabajador)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Apellido)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Oficio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Salario)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdTrabajador)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Apellido)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Oficio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Salario)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
