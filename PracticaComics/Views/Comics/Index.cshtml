@@ -1,0 +1,29 @@
+﻿@model List<Comic>
+
+<div class="container">
+    <h1 class="text-center mb-4">Comic Index</h1>
+
+    <p class="text-center">
+        <a asp-action="Create" class="btn btn-primary">Create New</a>
+    </p>
+
+    <div class="row justify-content-center">
+        @foreach (var item in Model)
+        {
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                    <img src="@item.Imagen" style="max-height:400px" class="card-img-top" alt="@item.Nombre">
+                    <div class="card-body">
+                        <h5 class="card-title">@item.Nombre</h5>
+                        <p class="card-text">@item.Descripcion</p>
+                        <p class="card-text"><small class="text-muted">ID: @item.idComic</small></p>
+                    </div>
+                    <div class="card-footer text-center">
+                        @Html.ActionLink("Details", "Details", new { idComic = item.idComic }, new { @class = "btn btn-info" })
+                        @Html.ActionLink("Delete", "Delete", new { idComic = item.idComic }, new { @class = "btn btn-warning" })
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
