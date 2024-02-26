@@ -56,6 +56,10 @@
             "Oracle.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.21.13, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
