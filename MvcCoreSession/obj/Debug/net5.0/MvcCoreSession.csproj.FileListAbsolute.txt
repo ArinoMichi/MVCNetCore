@@ -1,0 +1,8 @@
+E:\WEB_MASTER\MODULO3\MVCNetCore\MvcCoreSession\obj\Debug\net5.0\MvcCoreSession.csproj.AssemblyReference.cache
+E:\WEB_MASTER\MODULO3\MVCNetCore\MvcCoreSession\obj\Debug\net5.0\MvcCoreSession.GeneratedMSBuildEditorConfig.editorconfig
+E:\WEB_MASTER\MODULO3\MVCNetCore\MvcCoreSession\obj\Debug\net5.0\MvcCoreSession.AssemblyInfoInputs.cache
+E:\WEB_MASTER\MODULO3\MVCNetCore\MvcCoreSession\obj\Debug\net5.0\MvcCoreSession.AssemblyInfo.cs
+E:\WEB_MASTER\MODULO3\MVCNetCore\MvcCoreSession\obj\Debug\net5.0\MvcCoreSession.csproj.CoreCompileInputs.cache
+E:\WEB_MASTER\MODULO3\MVCNetCore\MvcCoreSession\obj\Debug\net5.0\MvcCoreSession.MvcApplicationPartsAssemblyInfo.cache
+E:\WEB_MASTER\MODULO3\MVCNetCore\MvcCoreSession\obj\Debug\net5.0\MvcCoreSession.RazorAssemblyInfo.cache
+E:\WEB_MASTER\MODULO3\MVCNetCore\MvcCoreSession\obj\Debug\net5.0\MvcCoreSession.RazorAssemblyInfo.cs

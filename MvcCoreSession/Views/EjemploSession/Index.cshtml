@@ -1,0 +1,22 @@
+﻿<h1>Ejemplos Session</h1>
+
+<h3>@ViewData["NUMERO"]</h3>
+
+
+<h2 style="color:fuchsia">
+    @Context.Session.GetString("nombre")
+</h2>
+<h2 style="color:green">
+    @Context.Session.GetString("hora")
+</h2>
+
+
+<ul class="list-group">
+    <li class="list-group-item">
+        <a class="nav-link text-dark" asp-area="" asp-controller="EjemploSession" asp-action="SessionSimple">Session Simple</a>
+    </li>
+    <li class="list-group-item">
+        <a class="nav-link text-dark" asp-area="" asp-controller="EjemploSession" asp-action="SessionMascota">Session Object</a>
+    </li>
+    
+</ul>
