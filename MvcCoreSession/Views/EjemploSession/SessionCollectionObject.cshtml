@@ -1,0 +1,52 @@
+﻿@model IEnumerable<MvcCoreSession.Models.Mascota>
+
+@{
+    ViewData["Title"] = "SessionCollectionObject";
+}
+
+<h1>SessionCollectionObject</h1>
+
+<p>
+    <a asp-controller="EjemploSession" asp-action="SessionCollectionObject" asp-route-accion="almacenar">Almacenar coleccion</a>
+</p>
+
+<p>
+    <a asp-controller="EjemploSession" asp-action="SessionCollectionObject" asp-route-accion="mostrar">Mostrar coleccion</a>
+</p>
+
+
+@if(Model != null)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Nombre)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Raza)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Edad)
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Nombre)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Raza)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Edad)
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+

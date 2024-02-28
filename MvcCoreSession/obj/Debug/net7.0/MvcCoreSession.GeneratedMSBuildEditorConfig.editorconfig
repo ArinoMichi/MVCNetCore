@@ -20,8 +20,24 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWplbXBsb1Nlc3Npb25cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/WEB_MASTER/MODULO3/MVCNetCore/MvcCoreSession/Views/EjemploSession/SessionCollection.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWplbXBsb1Nlc3Npb25cU2Vzc2lvbkNvbGxlY3Rpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/WEB_MASTER/MODULO3/MVCNetCore/MvcCoreSession/Views/EjemploSession/SessionCollectionObject.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWplbXBsb1Nlc3Npb25cU2Vzc2lvbkNvbGxlY3Rpb25PYmplY3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/WEB_MASTER/MODULO3/MVCNetCore/MvcCoreSession/Views/EjemploSession/SessionMascota.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWplbXBsb1Nlc3Npb25cU2Vzc2lvbk1hc2NvdGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/WEB_MASTER/MODULO3/MVCNetCore/MvcCoreSession/Views/EjemploSession/SessionMascotaJson.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWplbXBsb1Nlc3Npb25cU2Vzc2lvbk1hc2NvdGFKc29uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/WEB_MASTER/MODULO3/MVCNetCore/MvcCoreSession/Views/EjemploSession/SessionMascotaObject.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWplbXBsb1Nlc3Npb25cU2Vzc2lvbk1hc2NvdGFPYmplY3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/WEB_MASTER/MODULO3/MVCNetCore/MvcCoreSession/Views/EjemploSession/SessionSimple.cshtml]

@@ -1,4 +1,12 @@
-﻿<h1>Ejemplos Session</h1>
+﻿@{
+    Mascota mascota = null; 
+    if(Context.Session.GetString("MASCOTAOBJECT") != null)
+    {
+        mascota = Context.Session.GetObject<Mascota>("MASCOTAOBJECT");
+    }
+}
+
+<h1>Ejemplos Session</h1>
 
 <h3>@ViewData["NUMERO"]</h3>
 
@@ -10,6 +18,12 @@
     @Context.Session.GetString("hora")
 </h2>
 
+    @if (mascota != null)
+    {
+        <p>Mascota: @mascota.Nombre, Raza: @mascota.Raza, Edad: @mascota.Edad</p>
+        
+    }
+
 
 <ul class="list-group">
     <li class="list-group-item">
@@ -18,5 +32,17 @@
     <li class="list-group-item">
         <a class="nav-link text-dark" asp-area="" asp-controller="EjemploSession" asp-action="SessionMascota">Session Object</a>
     </li>
-    
+    <li class="list-group-item">
+        <a class="nav-link text-dark" asp-area="" asp-controller="EjemploSession" asp-action="SessionCollection">Session Collection</a>
+    </li>
+    <li class="list-group-item">
+        <a class="nav-link text-dark" asp-area="" asp-controller="EjemploSession" asp-action="SessionMascotaJson">Session Collection</a>
+    </li>
+    <li class="list-group-item">
+        <a class="nav-link text-dark" asp-area="" asp-controller="EjemploSession" asp-action="SessionMascotaObject">Session Object</a>
+    </li>
+    <li class="list-group-item">
+        <a class="nav-link text-dark" asp-area="" asp-controller="EjemploSession" asp-action="SessionCollectionObject">Session Collection Object</a>
+    </li>
+
 </ul>
