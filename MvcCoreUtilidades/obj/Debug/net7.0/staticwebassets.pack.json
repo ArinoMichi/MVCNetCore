@@ -245,8 +245,20 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreUtilidades\\wwwroot\\uploads\\deportivo.png",
-      "PackagePath": "staticwebassets\\uploads\\deportivo.png"
+      "Id": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreUtilidades\\wwwroot\\mails\\Screenshot 2023-03-09 154755.png",
+      "PackagePath": "staticwebassets\\mails\\Screenshot 2023-03-09 154755.png"
+    },
+    {
+      "Id": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreUtilidades\\wwwroot\\mails\\Screenshot 2023-03-09 154808.png",
+      "PackagePath": "staticwebassets\\mails\\Screenshot 2023-03-09 154808.png"
+    },
+    {
+      "Id": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreUtilidades\\wwwroot\\uploads\\Screenshot 2023-03-03 144330.png",
+      "PackagePath": "staticwebassets\\uploads\\Screenshot 2023-03-03 144330.png"
+    },
+    {
+      "Id": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreUtilidades\\wwwroot\\uploads\\Screenshot 2023-03-09 154755.png",
+      "PackagePath": "staticwebassets\\uploads\\Screenshot 2023-03-09 154755.png"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.MvcCoreUtilidades.Microsoft.AspNetCore.StaticWebAssets.props",

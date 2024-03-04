@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "iGox6ASQlZguCcX+AF8PKME3hyniB3IGjKK1FQGhr5E=",
+  "Hash": "i+fQxHvsGN8GvWSlWMJM77ID8PlJ1q/ZCQfRA37E9pI=",
   "Source": "MvcCoreUtilidades",
   "BasePath": "_content/MvcCoreUtilidades",
   "Mode": "Default",
@@ -1071,12 +1071,12 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreUtilidades\\wwwroot\\uploads\\deportivo.png",
+      "Identity": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreUtilidades\\wwwroot\\mails\\Screenshot 2023-03-09 154755.png",
       "SourceId": "MvcCoreUtilidades",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreUtilidades\\wwwroot\\",
       "BasePath": "_content/MvcCoreUtilidades",
-      "RelativePath": "uploads/deportivo.png",
+      "RelativePath": "mails/Screenshot 2023-03-09 154755.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1085,7 +1085,58 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\deportivo.png"
+      "OriginalItemSpec": "wwwroot\\mails\\Screenshot 2023-03-09 154755.png"
+    },
+    {
+      "Identity": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreUtilidades\\wwwroot\\mails\\Screenshot 2023-03-09 154808.png",
+      "SourceId": "MvcCoreUtilidades",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreUtilidades\\wwwroot\\",
+      "BasePath": "_content/MvcCoreUtilidades",
+      "RelativePath": "mails/Screenshot 2023-03-09 154808.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\mails\\Screenshot 2023-03-09 154808.png"
+    },
+    {
+      "Identity": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreUtilidades\\wwwroot\\uploads\\Screenshot 2023-03-03 144330.png",
+      "SourceId": "MvcCoreUtilidades",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreUtilidades\\wwwroot\\",
+      "BasePath": "_content/MvcCoreUtilidades",
+      "RelativePath": "uploads/Screenshot 2023-03-03 144330.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\Screenshot 2023-03-03 144330.png"
+    },
+    {
+      "Identity": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreUtilidades\\wwwroot\\uploads\\Screenshot 2023-03-09 154755.png",
+      "SourceId": "MvcCoreUtilidades",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\WEB_MASTER\\MODULO3\\MVCNetCore\\MvcCoreUtilidades\\wwwroot\\",
+      "BasePath": "_content/MvcCoreUtilidades",
+      "RelativePath": "uploads/Screenshot 2023-03-09 154755.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\Screenshot 2023-03-09 154755.png"
     }
   ]
 }

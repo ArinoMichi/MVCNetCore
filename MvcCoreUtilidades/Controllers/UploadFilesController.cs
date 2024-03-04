@@ -1,14 +1,15 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MvcCoreUtilidades.Helpers;
 
 namespace MvcCoreUtilidades.Controllers
 {
     public class UploadFilesController : Controller
     {
-        private IWebHostEnvironment hostEnvironment;
+        private HelperUploadFiles helperUploadFiles;
 
-        public UploadFilesController(IWebHostEnvironment hostEnvironment)
+        public UploadFilesController(HelperUploadFiles helperUploadFiles)
         {
-            this.hostEnvironment = hostEnvironment;
+            this.helperUploadFiles = helperUploadFiles;
         }
 
         public IActionResult SubirFichero()
@@ -18,21 +19,7 @@ namespace MvcCoreUtilidades.Controllers
         [HttpPost]
         public async Task<IActionResult> SubirFichero(IFormFile fichero)
         {
-            //RECUPERAMOS LA RUTA DE NUESTRO SERVER
-            string rootFolder = this.hostEnvironment.WebRootPath;
-            string fileName = fichero.FileName;
-            //NECESITAMOS LA RUTA FISICA PARA PODER ESCRIBIR EL FICHERO
-            //LA RUTA ES LA COMBINACION DE TEMPFOLDER Y FILENAME
-            //C:\Documents\Temp\file1.txt
-            //CUANDO ESTEMOS HABLANDO DE FILES(System.IO) PARA
-            //ACCEDER A RUTAS, SIEMPRE DEBEMOS UTILIZAR Path.Combine
-            string path = Path.Combine(rootFolder, "uploads", fileName);
-            using(Stream stream = new FileStream(path, FileMode.Create))
-            {
-                //MEDIANTE IFormFile COPIAMOS EL CONTENIDO
-                //DEL FICHERO AL STREAM
-                await fichero.CopyToAsync(stream);
-            }
+            string path = await this.helperUploadFiles.UploadFileAsync(fichero, Folders.Uploads);
             ViewData["MENSAJE"] = "Fichero subido a " + path;
 
             return View();

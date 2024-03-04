@@ -16,12 +16,24 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = E:\WEB_MASTER\MODULO3\MVCNetCore\MvcCoreUtilidades
 build_property._RazorSourceGeneratorDebug = 
 
+[E:/WEB_MASTER/MODULO3/MVCNetCore/MvcCoreUtilidades/Views/Cifrados/CifradoBasico.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2lmcmFkb3NcQ2lmcmFkb0Jhc2ljby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/WEB_MASTER/MODULO3/MVCNetCore/MvcCoreUtilidades/Views/Cifrados/CifradoEficiente.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2lmcmFkb3NcQ2lmcmFkb0VmaWNpZW50ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/WEB_MASTER/MODULO3/MVCNetCore/MvcCoreUtilidades/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/WEB_MASTER/MODULO3/MVCNetCore/MvcCoreUtilidades/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/WEB_MASTER/MODULO3/MVCNetCore/MvcCoreUtilidades/Views/MailExample/SendMail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpbEV4YW1wbGVcU2VuZE1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/WEB_MASTER/MODULO3/MVCNetCore/MvcCoreUtilidades/Views/Shared/Error.cshtml]

@@ -1,0 +1,15 @@
+﻿<h1>Send mail net core</h1>
+
+<form method="post" enctype="multipart/form-data">
+    <label>Para:</label>    
+    <input type="text" name="para" class="form-control" />
+    <label>Asunto</label>
+    <input type="text" name="asunto" class="form-control" />
+    <label>Mensaje</label>
+    <textarea name="mensaje" class="form-control"></textarea>
+    <input type="file" name="file" class="form-control" />
+    <button class="btn btn-info">
+        Send Mail
+    </button>
+</form>
+<h1>@ViewData["MENSAJE"]</h1>

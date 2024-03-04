@@ -1,0 +1,24 @@
+﻿@model Usuario
+
+<h1>Log In</h1>
+
+<form method="post">
+    <label>Email:</label>
+    <input type="text" name="email" class="form-control" />
+    <label>Password:</label>
+    <input type="text" name="password" class="form-control" />
+    <button class="btn btn-warning">
+        Log in
+    </button>
+</form>
+<a asp-action="Register" asp-controller="Usuarios">Crear cuenta</a>
+
+<h1>
+    @ViewData["MENSAJE"]
+</h1>
+
+@if(Model != null)
+{
+    <h1>Bienvenido @Model.Nombre</h1>
+    <img src="@Model.Imagen" style="width:150px;height:150px"/>
+}
