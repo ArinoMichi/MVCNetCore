@@ -1,0 +1,40 @@
+﻿@{
+    string usuario = Context.Session.GetString("USUARIO");
+}
+
+@if (usuario == null)
+{
+    <li class="nav-item">
+        <a asp-controller="Home" asp-action="Login"
+           class="nav-link">
+            Log In
+        </a>
+    </li>
+}
+else
+{
+    <li class="nav-item">
+        <a asp-controller="Home" asp-action="Logout"
+           class="nav-link">
+            Cerrar sesión @usuario
+        </a>
+    </li>
+    <li class="nav-item">
+        <a asp-controller="Home" asp-action="Perfil"
+           class="nav-link">
+            Perfil
+        </a>
+    </li>
+    <li class="nav-item">
+        <a asp-controller="Home" asp-action="Pedidos"
+           class="nav-link">
+            Pedidos
+        </a>
+    </li>
+    <li class="nav-item">
+        <a asp-controller="Home" asp-action="Comentarios"
+           class="nav-link">
+            Comentarios
+        </a>
+    </li>
+}

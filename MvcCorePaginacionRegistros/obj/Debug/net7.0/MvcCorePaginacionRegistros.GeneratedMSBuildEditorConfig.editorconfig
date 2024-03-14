@@ -1,0 +1,89 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MvcCorePaginacionRegistros
+build_property.RootNamespace = MvcCorePaginacionRegistros
+build_property.ProjectDir = E:\WEB_MASTER\MODULO3\MVCNetCore\MvcCorePaginacionRegistros\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = E:\WEB_MASTER\MODULO3\MVCNetCore\MvcCorePaginacionRegistros
+build_property._RazorSourceGeneratorDebug = 
+
+[E:/WEB_MASTER/MODULO3/MVCNetCore/MvcCorePaginacionRegistros/Views/Departamentos/Detalles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0YW1lbnRvc1xEZXRhbGxlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/WEB_MASTER/MODULO3/MVCNetCore/MvcCorePaginacionRegistros/Views/Departamentos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0YW1lbnRvc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/WEB_MASTER/MODULO3/MVCNetCore/MvcCorePaginacionRegistros/Views/Departamentos/_Empleado.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0YW1lbnRvc1xfRW1wbGVhZG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/WEB_MASTER/MODULO3/MVCNetCore/MvcCorePaginacionRegistros/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/WEB_MASTER/MODULO3/MVCNetCore/MvcCorePaginacionRegistros/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/WEB_MASTER/MODULO3/MVCNetCore/MvcCorePaginacionRegistros/Views/Paginacion/EmpleadosOficio.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnaW5hY2lvblxFbXBsZWFkb3NPZmljaW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/WEB_MASTER/MODULO3/MVCNetCore/MvcCorePaginacionRegistros/Views/Paginacion/EmpleadosOficioOut.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnaW5hY2lvblxFbXBsZWFkb3NPZmljaW9PdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/WEB_MASTER/MODULO3/MVCNetCore/MvcCorePaginacionRegistros/Views/Paginacion/PaginarGrupoDepartamentos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnaW5hY2lvblxQYWdpbmFyR3J1cG9EZXBhcnRhbWVudG9zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/WEB_MASTER/MODULO3/MVCNetCore/MvcCorePaginacionRegistros/Views/Paginacion/PaginarGrupoEmpleados.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnaW5hY2lvblxQYWdpbmFyR3J1cG9FbXBsZWFkb3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/WEB_MASTER/MODULO3/MVCNetCore/MvcCorePaginacionRegistros/Views/Paginacion/PaginarGrupoVistaDepartamento.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnaW5hY2lvblxQYWdpbmFyR3J1cG9WaXN0YURlcGFydGFtZW50by5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/WEB_MASTER/MODULO3/MVCNetCore/MvcCorePaginacionRegistros/Views/Paginacion/PaginarRegistroVistaDepartamento.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnaW5hY2lvblxQYWdpbmFyUmVnaXN0cm9WaXN0YURlcGFydGFtZW50by5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/WEB_MASTER/MODULO3/MVCNetCore/MvcCorePaginacionRegistros/Views/Shared/Components/MenuDepartamentos/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTWVudURlcGFydGFtZW50b3NcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/WEB_MASTER/MODULO3/MVCNetCore/MvcCorePaginacionRegistros/Views/Shared/Components/MenuDepartamentos/Departamentos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTWVudURlcGFydGFtZW50b3NcRGVwYXJ0YW1lbnRvcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/WEB_MASTER/MODULO3/MVCNetCore/MvcCorePaginacionRegistros/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/WEB_MASTER/MODULO3/MVCNetCore/MvcCorePaginacionRegistros/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/WEB_MASTER/MODULO3/MVCNetCore/MvcCorePaginacionRegistros/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/WEB_MASTER/MODULO3/MVCNetCore/MvcCorePaginacionRegistros/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/WEB_MASTER/MODULO3/MVCNetCore/MvcCorePaginacionRegistros/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-vldos7qpnk

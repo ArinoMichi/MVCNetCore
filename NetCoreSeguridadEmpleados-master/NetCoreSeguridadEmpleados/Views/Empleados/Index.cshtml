@@ -1,0 +1,61 @@
+﻿@model IEnumerable<NetCoreSeguridadEmpleados.Models.Empleado>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table table-borderless">
+    <thead>
+        <tr>
+            <th>
+                ID EMPLEADO
+            </th>
+            <th>
+                APELLIDO
+            </th>
+            <th>
+                OFICIO
+            </th>
+            <th>
+                SALARIO
+            </th>
+            <th>
+                DEPARTAMENTO
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IdEmpleado)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Apellido)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Oficio)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Salario)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Departamento)
+                </td>
+                <td>
+                    <a asp-controller="Empleados" asp-action="Details"
+                       asp-route-idempleado="@item.IdEmpleado" class="btn btn-info">
+                        Details
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,91 @@
+﻿@model List<Empleado>
+
+@{
+    ViewData["Title"] = "EmpleadosOficio";
+}
+
+@{
+    int registros = 0;
+    int numeroPagina = 1;
+    string oficio = "";
+    if (ViewData["REGISTROS"] != null)
+    {
+        registros = (int)ViewData["REGISTROS"];
+        oficio = ViewData["OFICIO"] as string;
+    }
+}
+
+<h1 class="text-success">Empleados por Oficio</h1>
+
+<hr />
+<form method="post">
+    <div class="mt-3">
+        <label>Oficio</label>
+        <input type="text" name="oficio" class="form-control" />
+        <button class="btn btn-info mt-3">Buscar</button>
+    </div>
+</form>
+<hr />
+@if (Model != null)
+{
+    <ul class="list-group list-group-horizontal">
+        @for (int i = 1; i <= registros; i += 2)
+        {
+            <li class="list-group-item list-group-item-success">
+                <a asp-controller="Paginacion"
+                   asp-action="EmpleadosOficio"
+                   asp-route-posicion="@i"
+                   asp-route-oficio="@oficio">
+                    @numeroPagina
+                </a>
+            </li>
+            numeroPagina += 1;
+        }
+    </ul>
+    <table class="table table-borderless table-success">
+        <thead>
+            <tr>
+                <th>
+                    EMPNO
+                </th>
+                <th>
+                    APELLIDO
+                </th>
+                <th>
+                    OFICIO
+                </th>
+                <th>
+                    SALARIO
+                </th>
+                <th>
+                    DEPTNO
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @item.IdEmpleado
+                    </td>
+                    <td>
+                        @item.Apellido
+                    </td>
+                    <td>
+                        @item.Oficio
+                    </td>
+                    <td>
+                        @item.Salario
+                    </td>
+                    <td>
+                        @item.IdDepartamento
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+<hr />
+

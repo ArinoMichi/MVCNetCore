@@ -1,0 +1,35 @@
+﻿@model List<Departamento>
+
+@{
+    
+}
+
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>
+                NOMBRE
+            </th>
+            <th>
+                LOCALIDAD
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Localidad)
+            </td>
+            <td>
+                <a asp-controller="Departamentos" asp-action="Detalles" asp-route-idDept="@item.IdDepartamento" class="btn btn-info">Detalles</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,13 @@
+﻿@model List<Coche>
+
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+        Coches
+    </a>
+    <ul class="dropdown-menu">
+        @foreach(var coche in Model)
+        {
+          <li><a class="dropdown-item" href="#">@coche.Marca</a></li>
+        }
+    </ul>
+</li>

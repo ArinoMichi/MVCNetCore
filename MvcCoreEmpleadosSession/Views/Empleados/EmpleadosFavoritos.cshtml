@@ -1,0 +1,63 @@
+﻿@{
+    List<Empleado> empleados =
+                memoryCache.Get<List<Empleado>>("FAVORITOS");
+}
+
+@{
+    ViewData["Title"] = "EmpleadosFavoritos";
+}
+
+<h1>Empleados Favoritos</h1>
+
+<img src="~/images/love.png" style="width: 100px; height: 100px" />
+
+<p>
+    <a asp-controller="Empleados"
+       asp-action="SessionEmpleadosOk">
+        Almacenar empleados
+    </a>
+</p>
+
+@if (empleados == null)
+{
+    <h2 style="color:red">
+        No existen empleados favoritos
+    </h2>
+}
+
+@if (empleados != null)
+{
+    <table class="table table-bordered table-danger">
+        <thead>
+            <tr>
+                <th>APELLIDO</th>
+                <th>OFICIO</th>
+                <th>SALARIO</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in empleados)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Apellido)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Oficio)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Salario)
+                    </td>
+                    <td>
+                        <a asp-controller="Empleados"
+                            asp-action="EmpleadosFavoritos"
+                            asp-route-ideliminar="@item.IdEmpleado">
+                            Eliminar Favorito
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

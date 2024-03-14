@@ -1,0 +1,51 @@
+﻿@model PracticaCubos.Models.Carrito
+@{
+    ViewBag.Title = "Carrito de Compras";
+}
+
+<div class="container mt-5">
+    <h2>Carrito de Compras</h2>
+
+    @if (Model.Cubos != null && Model.Cubos.Count > 0)
+    {
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Modelo</th>
+                    <th>Marca</th>
+                    <th>Precio</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var cubo in Model.Cubos)
+                {
+                    <tr>
+                        <td>@cubo.Nombre</td>
+                        <td>@cubo.Modelo</td>
+                        <td>@cubo.Marca</td>
+                        <td>$@cubo.Precio</td>
+                        <td>
+                            <a asp-action="Eliminar" asp-controller="Cubos" asp-route-idCubo="@cubo.IdCubo" class="btn btn-danger">
+                                Eliminar
+                            </a>
+                            
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <div class="text-right">
+            <h4>Precio Total: $@Model.PrecioTotal</h4>
+        </div>
+
+        <br />
+        <a asp-action="Comprar" asp-controller="Cubos" class="btn btn-info">Comprar</a>
+    }
+    else
+    {
+        <p style="color:darkred">No hay cubos en el carrito.</p>
+    }
+</div>

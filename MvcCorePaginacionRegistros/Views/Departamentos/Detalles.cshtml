@@ -1,0 +1,30 @@
+﻿@{
+    Departamento depart = ViewData["DEPART"] as Departamento;
+}
+
+<h1>Detalles Departamento @depart.IdDepartamento</h1>
+
+<ul class="list-group mt-3">
+    <li class="list-group-item list-group-item-info">
+        Nombre: @depart.Nombre
+    </li>
+    <li class="list-group-item list-group-item-info">
+        Localidad: @depart.Localidad
+    </li>
+</ul>
+
+<div id="contentempleado"></div>
+
+@section Scripts {
+    <script>
+        function loadEmpleadoPaginacion(posicion) {
+            $(function () {
+                $("#contentempleado").load("/Departamentos/_Empleado?posicion="
+                    + posicion + "&iddepart=" + @depart.IdDepartamento);
+            });
+        }
+
+        loadEmpleadoPaginacion(1);
+    </script>
+}
+

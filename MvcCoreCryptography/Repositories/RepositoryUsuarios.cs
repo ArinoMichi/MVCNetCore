@@ -27,7 +27,7 @@ namespace MvcCoreCryptography.Repositories
 
 
         //METODO PARA REGISTRAR UN USUARIO
-        public async Task RegisterUserAsync(string nombre, string email,
+        public async Task<Usuario> RegisterUserAsync(string nombre, string email,
             string password, string imagen)
         {
             Usuario user = new Usuario();
@@ -36,11 +36,14 @@ namespace MvcCoreCryptography.Repositories
             user.Email = email;
             user.Imagen = imagen;
             //CADA USUARIO TENDRA UN SALT DISTINTO
-            user.Salt = HelperCryptography.GenerateSalt();
+            user.Salt = HelperTools.GenerateSalt();
             //GUARDAMOS EL PASSWORD EN BYTE[]
             user.Password = HelperCryptography.EncryptPassword(password, user.Salt);
+            user.Activo = false;
+            user.TokenMail = HelperTools.GenerateTokenMail();
             this.context.Add(user);
             await this.context.SaveChangesAsync();
+            return user;
         }
 
         //NECESITAMOS UN METODO PARA VALIDAR AL USUARIO
@@ -63,7 +66,7 @@ namespace MvcCoreCryptography.Repositories
             {
                 string salt = user.Salt;
                 byte[] temp = HelperCryptography.EncryptPassword(password,salt);
-                bool respuesta = HelperCryptography.CompareArrays(temp, user.Password);
+                bool respuesta = HelperTools.CompareArrays(temp, user.Password);
                 if(respuesta == true)
                 {
                     return user;
@@ -74,5 +77,15 @@ namespace MvcCoreCryptography.Repositories
                 }
             }
         }
+        public async Task ActivateUserAsync(string token)
+        {
+            //BUSCAMOS EL USUARIO POR SU TOKEN
+            Usuario user = await
+                this.context.Usuarios.FirstOrDefaultAsync(x => x.TokenMail == token);
+            user.Activo = true;
+            user.TokenMail = "";
+            await this.context.SaveChangesAsync();
+        }
+
     }
 }

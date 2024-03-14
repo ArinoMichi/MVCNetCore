@@ -1,0 +1,28 @@
+﻿@model List<Coche>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>MARCA</th>
+            <th>MODELO</th>
+            <th>IMAGEN</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Marca)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Modelo)
+                </td>
+                <td>
+                    <img src="@item.Imagen" style="width: 100px; height: 100px" />
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

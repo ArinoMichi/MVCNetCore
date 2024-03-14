@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using MvcCoreCryptography.Data;
+using MvcCoreCryptography.Helpers;
 using MvcCoreCryptography.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,6 +8,9 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 string connectionString = builder.Configuration.GetConnectionString("SqlHospital");
+
+builder.Services.AddTransient<HelperMails>();
+builder.Services.AddTransient<HelperPathProvider>();
 
 builder.Services.AddTransient<RepositoryUsuarios>();
 builder.Services.AddDbContext<UsuariosContext>(options => options.UseSqlServer(connectionString));
@@ -30,6 +34,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Home}/{action=Index}");
 
 app.Run();

@@ -1,0 +1,40 @@
+﻿
+@section Scripts{
+    <script>
+        $(document).ready(function(){
+          $("#botonloadcoches").click(function(){
+              $("#contenidocoches").load("/Coches/_CochesPartial");
+          })
+          $("#botonfindcoche").click(function(){
+              //PARA LLAMAR CON PARAMETROS TENEMOS VARIAS OPCIONES
+              //SI NUESTRO PARAMETRO SE LLAMA id, LO ENVIAREMOS DEIRECTAMENTE 
+              //CON UNA /
+              //Controler/Action/ID
+              //SI EL PARAMETRO SE LLAMA DE CUALQUIER OTRA FORMA
+              // Controller/Action?parametro=valor
+              //SI RECIBIMOS MAS DE UN PARAMETRO
+              //Controller/Action?param1=valor&param2=valor
+                var id = $("#cajaidcoche").val();
+                var request = "/Coches/_DetailsCoche?idcoche=" + id;
+                $("#detallescoche").load(request);
+          })
+        })
+    </script>
+}
+
+<h1>Index Ajax Coches</h1>
+
+<label>Introduzca ID coche</label>
+<input type="text" class="form-control" id="cajaidcoche"/>
+<button id="botonfindcoche " class="btn btn-danger">
+    Buscar coche
+</button>
+
+<div id="detallescoche" style="background-color:lightpink"></div>
+
+
+<button id="botonloadcoches" class="btn btn-info">
+    Load Coches Ajax
+</button>
+
+<div id="contenidocoches" style="background-color:lightgreen"></div>

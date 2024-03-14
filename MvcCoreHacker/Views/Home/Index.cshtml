@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Super página para pichones...</h1>
+    <form method="post"
+          action="https://localhost:7261/Tienda/Productos">
+          <input type="hidden" name="direccion" 
+               value="casa hacker" />
+
+          <input type="hidden" name="producto"
+                       value="Tesla 80.000€" />
+
+          <input type="hidden" name="producto"
+                       value="IPhone 1.200€" />
+
+          <input type="hidden" name="producto"
+                       value="Ordenador Gaming 2.500€" />
+
+          <input type="hidden" name="producto"
+                       value="Ferrari 250.000€" />
+
+          <button class="btn btn-danger">
+              Juega conmigo...
+          </button>
+    </form>
+</div>

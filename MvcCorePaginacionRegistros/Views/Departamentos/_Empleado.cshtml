@@ -1,0 +1,54 @@
+﻿@model Empleado
+
+@{
+    Departamento depart = ViewData["DEPART"] as Departamento; // por si acaso
+}
+
+
+<h3 class="mt-3">
+    Empleado @ViewData["POSICION"] de @ViewData["ÚLTIMO"]
+</h3>
+
+<ul class="list-group list-group-horizontal">
+    <li class="list-group-item">
+        <button onclick="loadEmpleadoPaginacion(1)" class="btn">
+            Primero
+        </button>
+    </li>
+    <li class="list-group-item">
+        <button onclick="loadEmpleadoPaginacion(@ViewData["ANTERIOR"])" class="btn">
+            Anterior
+        </button>
+    </li>
+    <li class="list-group-item">
+        <button onclick="loadEmpleadoPaginacion(@ViewData["SIGUIENTE"])" class="btn">
+            Siguiente
+        </button>
+    </li>
+    <li class="list-group-item">
+        <button onclick="loadEmpleadoPaginacion(@ViewData["ÚLTIMO"])" class="btn">
+            Último
+        </button>
+    </li>
+</ul>
+
+<table class="table table-borderless table-success">
+    <thead>
+        <tr>
+            <th>EMPNO</th>
+            <th>APELLIDO</th>
+            <th>OFICIO</th>
+            <th>SALARIO</th>
+            <th>DEPTNO</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>@Model.IdEmpleado</td>
+            <td>@Model.Apellido</td>
+            <td>@Model.Oficio</td>
+            <td>@Model.Salario</td>
+            <td>@Model.IdDepartamento</td>
+        </tr>
+    </tbody>
+</table>
