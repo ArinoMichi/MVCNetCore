@@ -1,0 +1,85 @@
+﻿@model List<Cubo>
+
+
+@{
+    ViewData["Title"] = "CubosMarcaOut";
+}
+
+@{
+
+    int registros = 0;
+    int numeroPagina = 1;
+    string marca = "";
+
+
+    if (ViewData["REGISTROS"] != null)
+    {
+        registros = (int)ViewData["REGISTROS"];
+        marca = ViewData["MARCA"].ToString();
+    }
+}
+
+<h1 style="color:red">Paginar Cubos Marca OUT</h1>
+
+<h2 style="color:blue">
+    Registros filtrados: @registros
+</h2>
+
+<form method="post">
+    <label>Introduzca marca</label>
+    <select name="marca" class="form-control">
+        <option value="">Todas las marcas</option>
+        @foreach (var m in ViewBag.Marcas)
+        {
+            <option value="@m">@m</option>
+        }
+    </select>
+    <button class="btn btn-dark">
+        Buscar marca
+    </button>
+</form>
+
+@if (Model != null)
+{
+    <div>
+        <ul class="list-group list-group-horizontal">
+            @for (int i = 1; i <= registros; i += 2)
+            {
+                <li class="list-group-item list-group-item-warning">
+                    <a asp-controller="Paginacion"
+                       asp-action="CubosMarcaOut"
+                       asp-route-posicion="@i"
+                       asp-route-marca="@marca">
+                        @numeroPagina
+                    </a>
+                </li>
+                numeroPagina += 1;
+            }
+        </ul>
+    </div>
+    <hr />
+
+    <table class="table table-bordered table-success">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>NOMBRE</th>
+                <th>MARCA</th>
+                <th>PRECIO</th>
+                <th>IMAGEN</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.IdCubo</td>
+                    <td>@item.Nombre</td>
+                    <td>@item.Marca</td>
+                    <td>@item.Precio</td>
+                    <td> <img src="@item.Imagen" style="width:150px;height:150px" /></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+} 

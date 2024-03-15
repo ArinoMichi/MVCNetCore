@@ -1,0 +1,47 @@
+﻿@model List<Cubo>
+
+@{
+    ViewData["Title"] = "PaginarGrupoDepartamentos";
+}
+
+
+@{
+    int numeroRegistros = (int)ViewData["REGISTROS"];
+    int numeroPagina = 1;
+}
+
+<h1 style="color:blue">Paginar Grupo Departamentos</h1>
+
+<ul class="list-group list-group-horizontal">
+    @for (int i = 1; i <= numeroRegistros; i += 3)
+    {
+        <li class="list-group-item list-group-item-danger">
+            <a asp-controller="Paginacion"
+               asp-action="PaginarVistaCubosProcedure"
+               asp-route-posicion="@i">
+                Página @numeroPagina
+            </a>
+        </li>
+        numeroPagina += 1;
+    }
+</ul>
+
+<table class="table table-bordered table-warning">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>NOMBRE</th>
+            <th>IMAGEN</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.IdCubo</td>
+                <td>@item.Nombre</td>
+                <td> <img src="@item.Imagen" style="width:150px;height:150px" /></td>              
+            </tr>      
+        }
+    </tbody>
+</table> 

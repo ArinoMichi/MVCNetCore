@@ -1,0 +1,64 @@
+﻿ @model VistaCubos 
+
+  
+<h1>Paginación Registro Vista</h1> 
+
+  
+
+<h2 style="color:blue"> 
+    Registro @Model.Posicion de @ViewData["ULTIMO"] 
+</h2> 
+
+<div> 
+    <ul class="list-group list-group-horizontal"> 
+        <li class="list-group-item"> 
+            <a asp-controller="Paginacion" 
+               asp-action="PaginacionCubosAs"
+               asp-route-posicion="1"> 
+                Primero 
+            </a> 
+        </li> 
+
+        <li class="list-group-item"> 
+            <a asp-controller="Paginacion" 
+               asp-action="PaginacionCubosAs"
+               asp-route-posicion="@ViewData["ANTERIOR"]"> 
+                Anterior 
+            </a> 
+        </li> 
+
+        <li class="list-group-item"> 
+            <a asp-controller="Paginacion" 
+               asp-action="PaginacionCubosAs"
+               asp-route-posicion="@ViewData["SIGUIENTE"]"> 
+                Siguiente 
+            </a> 
+        </li> 
+
+        <li class="list-group-item"> 
+            <a asp-controller="Paginacion" 
+               asp-action="PaginacionCubosAs"
+               asp-route-posicion="@ViewData["ULTIMO"]"> 
+                Ultimo 
+            </a> 
+        </li> 
+    </ul> 
+</div> 
+
+<hr/> 
+
+<ul class="list-group"> 
+    <li class="list-group-item list-group-item-info"> 
+        Número: @Model.IdCubo 
+    </li> 
+    <li class="list-group-item list-group-item-info"> 
+        Nombre: @Model.Nombre 
+    </li> 
+    <li class="list-group-item list-group-item-info"> 
+        Localidad: @Model.Modelo 
+    </li>
+    <li class="list-group-item list-group-item-info">
+        Localidad: @Model.Precio
+    </li>
+    <img src="@Model.Imagen" style="width:150px;height:150px"
+</ul> 

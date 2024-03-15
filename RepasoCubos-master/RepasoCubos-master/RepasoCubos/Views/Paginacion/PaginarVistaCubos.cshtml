@@ -1,0 +1,62 @@
+﻿@model List<VistaCubos>
+
+@{
+
+    ViewData["Title"] = "PaginarGrupoVistaDepartamento";
+}
+
+
+@* 
+@{
+    int numeroRegistros = (int)ViewData["REGISTROS"];
+    int numeroPagina = 1;
+} *@
+
+<h1>Paginar Grupo VistaDepartamento</h1>
+
+
+<hr />
+@Html.Raw(ViewData["LINKS"])
+<hr />
+
+
+@* 
+ESTO ES OTRA MANERA DE HACER EL BUCLE, SIMPLEMENTE QUITAMOS EL REALIZADO CON DIV Y EL FOR DEL CONTROLLER Y LO HACEMOS CON ESTO
+PONIENDO TAMBIEN LOS VALORES DE ARRIBA COMENTADOS
+
+<ul class="list-group list-group-horizontal">
+    @for (int i = 1; i <= numeroRegistros; i += 2)
+    {
+        <li class="list-group-item list-group-item-success">
+            <a asp-controller="Paginacion"
+               asp-action="PaginarGrupoVistaDepartamento"
+               asp-route-posicion="@i">
+                Página @numeroPagina
+            </a>
+        </li>
+        numeroPagina += 1;
+    }
+</ul> *@
+
+
+<table class="table table-bordered table-dark">
+    <thead>
+        <tr>
+            <th>POSICION</th>
+            <th>ID</th>
+            <th>NOMBRE</th>
+            <th>IMAGEN</th>
+        </tr>
+    </thead>
+    <tbody>
+       @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Posicion</td>
+                <td>@item.IdCubo</td>
+                <td>@item.Nombre</td>
+                <td><img src="@item.Imagen" alt="Alternate Text" style="width:150px;height:150px" /></td>
+            </tr>
+        }
+    </tbody>
+</table> 

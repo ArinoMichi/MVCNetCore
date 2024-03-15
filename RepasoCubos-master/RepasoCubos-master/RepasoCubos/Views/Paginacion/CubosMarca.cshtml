@@ -1,0 +1,72 @@
+﻿@model List<Cubo>
+
+@{
+    ViewData["Title"] = "EmpleadosOficio";
+}
+
+@{
+    int registros = 0;
+    int numeroPagina = 1;
+    string marca = "";
+    if (ViewData["REGISTROS"] != null)
+    {
+        registros = (int)ViewData["REGISTROS"];
+        marca = ViewData["MARCA"].ToString();
+    }
+    //VAMOS A RECIBIR SIEMPRE EL NUMERO DE REGISTROS???
+}
+
+<h1 style="color:red">Paginar Cubos Marca</h1>
+
+<form method="post">
+    <label>Introduzca marca</label>
+    <input type="text" name="marca" class="form-control" />
+    <button class="btn btn-info">
+        Buscar marca
+    </button>
+</form>
+
+@if (Model != null)
+{
+    //INCLUIMOS LA PAGINACION Y EL DIBUJO DE LOS EMPLEADOS
+    <div>
+        <ul class="list-group list-group-horizontal">
+            @for (int i = 1; i <= registros; i += 2)
+            {
+                <li class="list-group-item list-group-item-info">
+                    <a asp-controller="Paginacion"
+                       asp-action="CubosMarca"
+                       asp-route-posicion="@i"
+                       asp-route-marca="@marca">
+                        @numeroPagina
+                    </a>
+                </li>
+                numeroPagina += 1;
+            }
+        </ul>
+    </div>
+    <hr />
+    <table class="table table-bordered table-success">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>NOMBRE</th>
+                <th>MARCA</th>
+                <th>PRECIO</th>
+                <th>IMAGEN</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.IdCubo</td>
+                    <td>@item.Nombre</td>
+                    <td>@item.Marca</td>
+                    <td>@item.Precio</td>
+                    <td> <img src="@item.Imagen" style="width:150px;height:150px" /></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+} 

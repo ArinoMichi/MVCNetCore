@@ -1,0 +1,26 @@
+﻿@model List<RepasoCubos.Models.Cubo>
+
+@{
+    ViewBag.Title = "Lista de Cubos";
+}
+
+<h2 style="color:darkmagenta">@ViewData["MENSAJE"]</h2>
+<div class="container mt-5">
+    <div class="row">
+        @foreach (var cubo in Model)
+        {
+            <div class="col-md-3 mb-4">
+                <div class="card h-50">
+                    <img src="@cubo.Imagen" class="card-img-top img-fluid" alt="Imagen del Cubo">
+                    <div class="card-body">
+                        <h5 class="card-title">@cubo.Nombre</h5>
+                        <p class="card-text">Modelo: @cubo.Modelo</p>
+                        <p class="card-text">Marca: @cubo.Marca</p>
+                        <p class="card-text">Precio: $@cubo.Precio</p>
+                        <a asp-action="Index" asp-controller="Cubos" asp-route-idCubo="@cubo.IdCubo" class="btn btn-outline-info">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
